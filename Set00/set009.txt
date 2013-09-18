@@ -1,0 +1,21 @@
+remainder
+---------
+Usage: (remainder a b)
+Gives the remainder value when a is divided by b
+
+Example: (remainder 6 5) => 1
+
+Modulo
+-------
+The functioning of remainder is similar to modulo function for positive values, but it differs in case of negative numbers.
+The result of modulo is calculated as per the Eucledian division, whereas the result of remainder is calculated using plain division
+
+
+Usage: (modulo a b)
+Gives the modulo value 
+Example: (modulo 10 3) => 1
+		 (modulo -10.0 3) => 2.0
+		 (modulo 10.0 -3) => -2.0
+		  modulo -10 -3) => -1
+		  
+modulo(a, b) (rem((+ b (rem( a, b ))), b))
